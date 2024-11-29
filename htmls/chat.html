@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokalbiai</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <script src="../js/chat.js" defer></script>
+</head>
+<body>
+
+<div class="info">
+    <div class="container">
+
+        <div class="d-flex justify-content-center">
+            <span class="text mb-2 mt-2"></span>
+        </div>
+
+    </div>
+</div>
+
+<div class="toolbar">
+    <div class="container d-flex justify-content-between">
+
+        <nav class="navbar navbar-expand bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../htmls/gallery.html">Gallery</a>
+                        <a class="nav-link" href="../htmls/profile.html">User profile</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex mt-2">
+            <button class="btn btn-outline-danger logoutBtn">Logout</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="bg">
+    <div class="container">
+        <div class="line"></div>
+    </div>
+</div>
+
+<main>
+    <div class="container d-flex justify-content-center flex-column">
+
+        <div class="chat grow4 d-flex justify-content-center mt-3">
+            <div class="box"></div>
+        </div>
+
+        <div class="grow1 d-flex justify-content-center send gap-3 mt-3">
+            <input type="text" placeholder="message" aria-label="message" name="message">
+
+            <button class="btn btn-outline-primary sendBtn">Send</button>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+

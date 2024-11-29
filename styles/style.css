@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #383838;
+    padding: 0;
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.j-around {
+    justify-content: space-around;
+}
+
+.j-end {
+    justify-content: end;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.a-stretch {
+    align-items: stretch;
+}
+
+.a-end {
+    align-items: flex-end;
+}
+
+.direction-col {
+    flex-direction: column;
+}
+
+.grow1 {
+    flex: 1;
+}
+
+.grow2 {
+    flex: 2;
+}
+
+.grow3 {
+    flex: 3;
+}
+
+.grow4 {
+    flex: 4;
+}
+
+.grow5 {
+    flex: 5;
+}
+
+.gap10 {
+    gap: 10px
+}
+
+.gap20 {
+    gap: 20px
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.mt3 {
+    margin-top: 30px;
+}
+
+.mt5 {
+    margin-top: 50px;
+}
+
+.mb5 {
+    margin-bottom: 50px;
+}
+
+.mt10 {
+    margin-top: 100px;
+}
+
+.mb10 {
+    margin-bottom: 100px;
+}
+
+.ml1 {
+    margin-left: 10px;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+/*INDIVIDUAL CLASSES*/
+
+
+/* All pages */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.toolbar {
+    background-color: #212529;
+    .container > nav {
+        border: none
+    }
+}
+
+.toolbar > nav {
+    border: none
+}
+
+
+/* Register & login pages */
+main {
+    background-color: #444447;
+    height: 897px;
+
+    input {
+        width: 300px;
+        height: 40px;
+    }
+
+    .error {
+        color: red;
+        display: none;
+    }
+
+    .regBtn {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+
+/* Home page */
+.info {
+    background-color: #212529;
+    .container {
+        color: white;
+        font-size: 16px;
+        border-bottom: 0.7px solid #979797;
+    }
+}
+
+.logoutBtn {
+    width: 100px;
+    height: 40px;
+}
+
+section {
+    background-color: #444447;
+    .posts > div {
+        width: 300px;
+        height: 300px;
+        color: white;
+        padding: 10px;
+    }
+    .item h4, .item div {
+        pointer-events: none;
+    }
+}
+
+.bg {
+    width: 100%; !important;
+    height: 1px;
+    background-color: #c3c2c2;
+}
+
+
+/* Singlepost page */
+.post {
+    color: white;
+}
+
+
+/* Gallery */
+.photos {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Chat page */
+.chat {
+    color: white;
+    .box {
+        width: 1000px;
+        height: 750px;
+        border: 1px solid rgba(255, 255, 255, 0.57);
+        border-radius: 10px;
+        max-height: 750px;
+        overflow-y: auto;
+    }
+}
+
+.send input {
+    border-style: hidden;
+    border-radius: 5px;
+    width: 600px;
+    font-weight: bold;
+}
+
+.sendBtn {
+    width: 200px;
+    height: 40px;
+}
+
+.texts {
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    border-radius: 5px;
+    padding: 5px;
+    width: 350px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.time {
+    width: 350px;
+    color: rgba(255, 253, 253, 0.64);
+
+}
+
+
+/* User profile */
+
+.pfp {
+    width: 100px;
+    height: 100px;
+}
+
+.imgUrl {
+    border: none;
+    text-decoration: none;
+    border-radius: 0px;
+    cursor: pointer;
+    border-bottom: lightskyblue 1px solid;
+    background-color: rgba(28, 28, 28, 0);
+    outline: none;
+    transition: background-color 0.5s ease, border-color 0.9s ease;
+}
+.imgUrl:focus {
+    background-color: #00fae5;
+    border-radius: 5px;
+    border: 1px solid #6400f8;
+}
+
+span {
+    color: white;
+}
+
+.updtPass {
+    border: none;
+    text-decoration: none;
+    border-radius: 0px;
+    cursor: pointer;
+    border-bottom: lightskyblue 1px solid;
+    background-color: rgba(28, 28, 28, 0);
+    outline: none;
+    width: 200px;
+    transition: background-color 0.5s ease, border-color 0.9s ease;
+}
+.updtPass:focus {
+    background-color: #00fae5;
+    border-radius: 5px;
+    border: 1px solid #6400f8;
+}
+
+.updtBtn {
+    width: 160px;
+}
